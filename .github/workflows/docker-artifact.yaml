@@ -25,6 +25,6 @@ jobs:
     - name: Deploy
       run: |
         echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
-        docker push ghcr.io/chaoslecion123/cicd-artifact-python/python-artifact-demo:lates
+        docker push ghcr.io/chaoslecion123/cicd-artifact-python/python-artifact-demo:latest
 
 
