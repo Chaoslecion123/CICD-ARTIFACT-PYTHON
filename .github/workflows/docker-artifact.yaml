@@ -11,7 +11,7 @@ jobs:
     name: "python artifact"
 
     env:
-      CR_PAT: ${{ secrets.CR.PAT }}
+      CR_PAT: ${{ secrets.CR_PAT }}
 
     steps:
     - name: Checkout
