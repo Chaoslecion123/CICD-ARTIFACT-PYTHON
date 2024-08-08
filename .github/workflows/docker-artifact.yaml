@@ -20,7 +20,7 @@ jobs:
     - name: Build
       run: |
         docker build -t python-artifact-demo .
-        docker push ghcr.io/Chaoslecion123/CICD-ARTIFACT-PYTHON/python-artifact-demo:latest python-artifact-demo
+        docker tag ghcr.io/Chaoslecion123/CICD-ARTIFACT-PYTHON/python-artifact-demo:latest python-artifact-demo
 
     - name: Deploy
       run: |
