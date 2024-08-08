@@ -20,11 +20,11 @@ jobs:
     - name: Build
       run: |
         docker build -t python-artifact-demo:latest .
-        docker tag python-artifact-demo:latest ghcr.io/chaoslecion123/CICD-ARTIFACT-PYTHON/python-artifact-demo:latest
+        docker tag python-artifact-demo:latest ghcr.io/chaoslecion123/cicd-artifact-python/python-artifact-demo:latest
 
     - name: Deploy
       run: |
         echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
-        docker push ghcr.io/Chaoslecion123/CICD-ARTIFACT-PYTHON/python-artifact-demo:lates
+        docker push ghcr.io/Chaoslecion123/cicd-artifact-python/python-artifact-demo:lates
 
 
